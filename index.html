@@ -36,15 +36,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" size="80">
+          <input class="form-control mr-sm-2" type="search" style="background-color: #e6e6e6;" placeholder="Search" aria-label="Search" size="80">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Sign Up</a>
+            <a class="nav-link ml-3 btn btn-outline-warning" href="#" style="text-transform: capitalize;border-radius: 20px;">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Log In</a>
+            <a class="nav-link btn btn-warning ml-3" href="#" style="border-radius: 20px;text-transform: capitalize;">Daftar</a>
           </li>
         </ul>
       </div>
@@ -54,8 +54,11 @@
   <header class="masthead text-center">
     <div class="masthead-content">
       <div class="container">
-        <h1 class="masthead-heading mb-0">Coorsos</h1>
-        <h2 class="masthead-subheading mb-0">Will Rock Your Socks Off</h2>
+        <img src="img/coorsos-logohitam.png" class="masthead-heading mb-0"></img>
+        <br><br><br>
+        <h2 class="masthead-subheading mb-0">Belajar dimana saja</h2>
+        <h2 class="masthead-subheading mb-0">dan kapan saja.</h2>
+        <h2 class="masthead-subheading mb-0">#SemuaPastiBisa</h2>
         <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
       </div>
     </div>
@@ -72,10 +75,10 @@
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4">For those about to rock...</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste
-                esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae
-                adipisci, beatae obcaecati.</p>
+              <h2 class="display-4">Mengapa Coorsos? </h2>
+              <p style="font-weight: 500;">Coorsos memiliki visi untuk memajukan edukasi di Indonesia dengan menyediakan marketplace untuk mendapat dan memberi
+                pengetahuan dengan motto "Belajar tidak harus mahal".
+              </p>
             </div>
           </div>
         </div>
@@ -94,10 +97,9 @@
           </div>
           <div class="col-lg-6">
             <div class="p-5">
-              <h2 class="display-4">We salute you!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste
-                esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae
-                adipisci, beatae obcaecati.</p>
+              <h2 class="display-4">Rekomendasi</h2>
+              <p style="font-weight: 500;">Iniliah rekomendasi pilihan khusus dari Coorsos, untuk Anda.</p>
+              <a href="#" class="btn btn-light rounded-pill mt-3" style="color: red;font-weight: bolder;">Klik lebih lanjut untuk video lainnya</a>
             </div>
           </div>
         </div>
@@ -109,7 +111,8 @@
   <!-- Footer -->
   <footer class="py-5">
     <div class="container">
-      <p class="m-0 text-center small">Copyright &copy; Your Website 2020</p>
+      <img class="center mb-2 logo-footer" src="img/coorsos-logohitam.png"  style="text-align:center;"></img>
+      <p class="m-0 text-center small" style="font-weight: bolder;">Copyright &copy; Coorsos 2020</p>
     </div>
     <!-- /.container -->
   </footer>
@@ -117,6 +120,19 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 300) { 
+              $('.navbar').addClass('transparent');
+          } else {
+              $('.navbar').removeClass('transparent');
+          }
+        });
+});
+  </script>
 
 </body>
 

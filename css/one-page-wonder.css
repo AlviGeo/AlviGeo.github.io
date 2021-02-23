@@ -157,3 +157,22 @@ header.masthead .bg-circle-4 {
 .btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
 }
+
+
+.masthead-heading {
+  width: 300px;
+  height: 100px;
+}
+
+.masthead-subheading {
+  line-height: 100%;
+  font-weight:lighter;
+  display: center;
+}
+
+.logo-footer {
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+  height: 30px;
+}
